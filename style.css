@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Noto+Serif&family=Noto+Serif+Display:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Serif", serif;
+  color: #383838;
+  height: auto;
+  background: #fcf8ed;
+}
+
+#landing {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#menu {
+  position: absolute;
+  top: 0;
+}
+#landing h1 {
+  font-family: "Noto Serif Display", serif;
+  font-size: 5rem;
+  font-weight: 400;
+  letter-spacing: -3px;
+  line-height: 0.3;
+  text-align: center;
+}
+#landing span {
+  font-size: 1.5rem;
+  font-family: "Noto Serif", serif;
+  letter-spacing: 0;
+}
+
+#gallery img {
+  width: 100%;
+}
+
+#about {
+  padding: 5rem 1rem;
+  text-align: center;
+  position: relative;
+}
+#about span {
+  position: absolute;
+  top: 30%;
+  left: -15%;
+  font-size: 44vw;
+  letter-spacing: -5px;
+  z-index: -1;
+  font-family: "Noto Serif Display", serif;
+  color: #e4e4e4;
+}
+#about p {
+  font-family: "Lato", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.25;
+}
+
+.exhibitions {
+  padding: 7rem 1rem;
+  background: #201f1e;
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 1.4;
+}
+.exhibitions h3 {
+  font-family: "Noto Serif Display", serif;
+  margin-bottom: 1rem;
+}
+.exhibitions ul {
+  list-style-type: none;
+}
+
+#virtual {
+  position: relative;
+  text-align: center;
+}
+#virtual img {
+  width: 100%;
+}
+#virtual h3 {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  color: white;
+  font-family: "Noto Serif", serif;
+  font-size: 1.5rem;
+}
+
+#nft {
+  background: #201f1e;
+  padding: 5rem 3rem;
+  text-align: center;
+}
+#nft h3 {
+  font-family: "Noto Serif Display", serif;
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+#nft-links {
+  display: flex;
+  justify-content: space-between;
+}
+#nft a {
+  color: white;
+  text-decoration: none;
+  line-height: 2;
+}
+#nft h4 {
+  font-family: "Lato", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+#nft-scl {
+  display: flex;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+  padding: 3rem 2rem;
+}
