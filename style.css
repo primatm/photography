@@ -41,14 +41,25 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-}
-.img-container {
   text-align: center;
-  height: 45%;
+  font-family: "Noto Serif Display", serif;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  text-shadow: 0 0 7px #383838;
+  color: white;
 }
-#gallery img {
-  width: 50%;
+.img-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.img-container1 {
+  background: center / cover no-repeat url(kimson-doan-HD8KlyWRYYM-unsplash.jpg);
+  height: 50%;
+}
+.img-container2 {
+  background: center / cover no-repeat url(robert-bagramov-_4srssfb-OY-unsplash.jpg);
+  height: 50%;
 }
 
 #about {
@@ -66,17 +77,17 @@ body {
   line-height: 0;
   z-index: -1;
   font-family: "Noto Serif Display", serif;
-  color: #e4e4e4;
+  color: #f0f0f0;
 }
 #about p {
   font-family: "Lato", sans-serif;
   font-size: 1.25rem;
   font-weight: 300;
-  line-height: 1.25;
+  line-height: 1.5;
 }
 
 .exhibitions {
-  padding: 7rem 1rem;
+  padding: 5rem 1rem;
   background: #201f1e;
   color: white;
   font-family: "Lato", sans-serif;
@@ -113,11 +124,19 @@ body {
   text-shadow: 0px 0px 10px #3d3d3d;
 }
 
+#vertical {
+  border-left: 1px solid white;
+  height: 10vh;
+  position: absolute;
+  left: 50%;
+}
+
 #nft {
   background: #201f1e;
   padding: 5rem 3rem;
   text-align: center;
 }
+
 #nft h3 {
   font-family: "Noto Serif Display", serif;
   font-size: 2rem;
@@ -148,6 +167,23 @@ body {
   align-items: center;
   row-gap: 1rem;
   padding: 3rem 2rem;
+}
+#contact h3 {
+  font-size: 2rem;
+  font-family: 'Noto Serif Display', serif;
+}
+#contact a {
+  text-decoration: none;
+  color: #3d3d3d;
+  font-size: 1.4rem;
+}
+#social {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+#social a {
+  font-size: 2rem;
 }
 
 /*  > 900px  */
