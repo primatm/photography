@@ -11,7 +11,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300&family=Noto+Serif&family=Noto+Serif+Display:wght@300;400&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
 
@@ -26,12 +28,16 @@
 
         <div id="gallery">
             <div class="img-cont img-container1">
-                <h2>Portraits</h2>
-                <h3>view gallery</h3>
+                <a href="#">
+                    <h2>Portraits</h2>
+                    <h3>view gallery</h3>
+                </a>
             </div>
             <div class="img-cont img-container2">
-                <h2>Gallery</h2>
-                <h3>view gallery</h3>
+                <a href="#">
+                    <h2>Gallery</h2>
+                    <h3>view gallery</h3>
+                </a>
             </div>
         </div>
 
@@ -40,10 +46,10 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste rerum, nostrum eos consequatur, nemo qui
                 amet suscipit animi voluptates molestiae natus ipsam dolor. Eum omnis, itaque quos esse voluptatibus,
                 quasi tempore, consequuntur praesentium quo aperiam nostrum fugit. Molestias fuga possimus eligendi
-                nulla et, rem numquam itaque repellat voluptatum nemo sed.</p><br>
+                nulla et, rem numquam itaque repellat voluptatum nemo sed.</p>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab cum doloribus quis, ducimus neque officiis?
                 Assumenda quia autem sunt tempora voluptatum? Tempore totam minima eligendi ducimus amet, eveniet ipsum,
-                quaerat quas nulla perspiciatis debitis exercitationem quo facere suscipit delectus nostrum.</p>
+                quaerat quas nulla perspiciatis debitis exercitationem quo facere suscipit delectus nostrum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores inventore rem molestias dolore eaque sed vero quod corrupti ut commodi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil error hic nesciunt nemo nobis repudiandae fugit placeat minima quo modi voluptas et assumenda consectetur ab doloribus officia voluptatum id, quasi adipisci deserunt unde culpa architecto? Dolore facere commodi officiis incidunt provident ullam repudiandae, cum, voluptatum dolor, aspernatur accusamus asperiores! Tempore?</p>
         </div>
 
         <div id="exhibitions-section">
@@ -71,37 +77,42 @@
                         <li>1997. Hrvatska fotografija, Umjetnički paviljon, Zagreb</li>
                         <li>1997. Izmjena, Split</li>
                         <li>1996. Stric, Meuđunarodni festival novog filma i videa ( s Milanom Brkićem), Split</li>
-                        <li>1995. GAP, Tvrđava Gripe, Split</li>
-                        <li>1995. Images 95, Vevey, Švicarska</li>
-                        <li>1993. Hrvatska fotografija od 50-ih do danas, Muzej suvremene umjetnosti, Zagreb</li>
-                        <li>1992. Bepo Zenit, ZGRAF, Umjetnički paviljon, Zagreb</li>
-                        <li>1992. Fotografije, 23.salon mladih, Glipoteka HAZU, Zagreb</li>
-                        <li>1992. Bepo Zenit, Biennale mladih Mediterana, Valenica</li>
-                        <li>1992. Requiem, Galerija Otok, Dubrovnik</li>
                     </ul>
-                    <ul class="slide">
-                        <li>1992. Refleks, Galerija Zvonimir, Zagreb</li>
-                        <li>1992. Desant na Beč, WUK, Beč</li>
-                        <li>1991. Happy new year, Galerija Loggia, Split</li>
-                        <li>1991. Rasap, Art ljeto, Split</li>
-                        <li>1990. Voda posuda, Splitski salon, Split</li>
-                        <li>1990. Destroy the palace, Art ljeto, Split</li>
-                        <li>1986. Instalacija, Klub arhitekata(Grupa5), Zagreb</li>
-                        <li>1985. Fotografije, Gradska knjižnica J.Šižgorić(s D.Šarićem.</li>
-                        <li>1985. Ide patka, Foto klub, Split(s S.Pleškom i Ž.Serdarevićem)</li>
-                        <li>1984. Fotografije, Tribina mladih, Split (s D.Šarićem i M.Vesovićem)</li>
-                        <li>1980. Happy New Art, Srećna galerija, Beograd</li>
-                        <li>1979. Fotografija, Galerija Nema veze ŠPU, Split</li>
-                    </ul>
+                    <input id="toggle" type="checkbox">
+                    <label for="toggle"></label>
+                    <div id="expand">
+                        <ul class="slide">
+                            <li>1995. GAP, Tvrđava Gripe, Split</li>
+                            <li>1995. Images 95, Vevey, Švicarska</li>
+                            <li>1993. Hrvatska fotografija od 50-ih do danas, Muzej suvremene umjetnosti, Zagreb</li>
+                            <li>1992. Bepo Zenit, ZGRAF, Umjetnički paviljon, Zagreb</li>
+                            <li>1992. Fotografije, 23.salon mladih, Glipoteka HAZU, Zagreb</li>
+                            <li>1992. Bepo Zenit, Biennale mladih Mediterana, Valenica</li>
+                            <li>1992. Requiem, Galerija Otok, Dubrovnik</li>
+                            <li>1992. Refleks, Galerija Zvonimir, Zagreb</li>
+                            <li>1992. Desant na Beč, WUK, Beč</li>
+                            <li>1991. Happy new year, Galerija Loggia, Split</li>
+                            <li>1991. Rasap, Art ljeto, Split</li>
+                            <li>1990. Voda posuda, Splitski salon, Split</li>
+                            <li>1990. Destroy the palace, Art ljeto, Split</li>
+                            <li>1986. Instalacija, Klub arhitekata(Grupa5), Zagreb</li>
+                            <li>1985. Fotografije, Gradska knjižnica J.Šižgorić(s D.Šarićem.</li>
+                            <li>1985. Ide patka, Foto klub, Split(s S.Pleškom i Ž.Serdarevićem)</li>
+                            <li>1984. Fotografije, Tribina mladih, Split (s D.Šarićem i M.Vesovićem)</li>
+                            <li>1980. Happy New Art, Srećna galerija, Beograd</li>
+                            <li>1979. Fotografija, Galerija Nema veze ŠPU, Split</li>
+                        </ul>
+                    </div>
+            
                 </div>
             </div>
         </div>
-        
+
 
         <div id="virtual">
-            <a href="https://oncyber.io/exhibits/AT54rOEGM6tP5N2CKZVL" target="_blank"><img
-                    src="/virtual-gallery.jpg"></a>
-            <a href="https://oncyber.io/exhibits/AT54rOEGM6tP5N2CKZVL"><h3>Virtual Gallery</h3></a>
+            <a href="https://oncyber.io/exhibits/AT54rOEGM6tP5N2CKZVL">
+                <h3>Virtual Gallery</h3>
+            </a>
         </div>
 
         <div id="vertical"></div>
@@ -132,7 +143,8 @@
             <h3>Contact</h3>
             <a href="rino.efendic@gmail.com">rino.efendic@gmail.com</a>
             <div id="social">
-                <a href="https://www.instagram.com/rinoefendic3/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.instagram.com/rinoefendic3/" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
                 <a href="https://twitter.com/Rabotnik021" target="_blank"><i class="fa-brands fa-twitter"></i></a>
             </div>
         </div>

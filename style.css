@@ -9,7 +9,7 @@ body {
   font-family: "Noto Serif", serif;
   color: #383838;
   height: auto;
-  background: #fcf8ed;
+  background: #f5f5f5;
 }
 
 #landing {
@@ -32,7 +32,7 @@ body {
   text-align: center;
 }
 #landing span {
-  font-size: 4.5vw;
+  font-size: 6vw;
   font-family: "Noto Serif Display", serif;
   letter-spacing: 0;
 }
@@ -48,24 +48,34 @@ body {
   text-shadow: 0 0 7px #383838;
   color: white;
 }
-.img-cont {
+.img-cont a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  color: white;
 }
 .img-container1 {
   background: center / cover no-repeat url(kimson-doan-HD8KlyWRYYM-unsplash.jpg);
   height: 50%;
 }
 .img-container2 {
-  background: center / cover no-repeat url(robert-bagramov-_4srssfb-OY-unsplash.jpg);
+  background: center / cover no-repeat
+    url(robert-bagramov-_4srssfb-OY-unsplash.jpg);
   height: 50%;
 }
 
 #about {
+  height: 100vh;
+  width: auto;
   padding: 16% 10%;
   text-align: center;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   overflow: hidden;
 }
 #about span {
@@ -77,7 +87,7 @@ body {
   line-height: 0;
   z-index: -1;
   font-family: "Noto Serif Display", serif;
-  color: #f0f0f0;
+  color: #ebebeb;
 }
 #about p {
   font-family: "Lato", sans-serif;
@@ -86,8 +96,42 @@ body {
   line-height: 1.5;
 }
 
+input {
+  display: none;
+}
+label {
+  display: block;
+  text-align: center;
+  color: white;
+  transition: 0.2s;
+}
+label:before {
+  font-weight: 800;
+  font-size: 25px;
+  content: "+";
+  vertical-align: text-top;
+  display: inline-block;
+  width: 33px;
+  height: 33px;
+  margin: -5px 5px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  margin: 1rem 0;
+}
+#expand {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.5s;
+  color: #fff;
+}
+#toggle:checked ~ #expand {
+  height: auto;
+}
+#toggle:checked ~ label:before {
+  content: "-";
+}
+
 #exhibitions-section {
-  /* padding: 5rem 0; */
   height: auto;
 }
 .exhibitions {
@@ -111,10 +155,13 @@ body {
 #virtual {
   position: relative;
   text-align: center;
+  height: 50vh;
+  background: center / cover no-repeat url(virtual-gallery.jpg);
 }
-#virtual img {
-  width: 50%;
+#virtual a {
   display: block;
+  height: 100%;
+  width: 100%;
 }
 #virtual h3 {
   position: absolute;
@@ -174,7 +221,7 @@ body {
 }
 #contact h3 {
   font-size: 2rem;
-  font-family: 'Noto Serif Display', serif;
+  font-family: "Noto Serif Display", serif;
 }
 #contact a {
   text-decoration: none;
@@ -190,6 +237,17 @@ body {
   font-size: 2rem;
 }
 
+/* tableti */
+@media (min-width: 750px) {
+  #gallery {
+    flex-direction: row;
+  }
+  .img-cont {
+    width: 50%;
+    height: auto;
+  }
+}
+
 /*  > 900px  */
 @media (min-width: 900px) {
   #landing h1 {
@@ -199,14 +257,42 @@ body {
   #landing span {
     font-size: 2.5rem;
   }
+  #gallery h2 {
+    font-size: 4vw;
+  }
+  #gallery h3 {
+    font-size: 2vw;
+  }
   #about {
     padding: 16% 20%;
   }
+  #about p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+  }
   #about span {
     letter-spacing: -15px;
-    color: #f0f0f0;
   }
   .exhibitions {
     font-size: 1.5rem;
+  }
+  #virtual h3 {
+    font-size: 5vw;
+  }
+  #nft h3 {
+    font-size: 4vw;
+  }
+  #nft h4 {
+    font-size: 2.6vw;
+  }
+  #contact h3 {
+    font-size: 4vw;
+  }
+  #social {
+    width: 30%;
+    justify-content: space-evenly;
+  }
+  #social a {
+    font-size: 5vw;
   }
 }
