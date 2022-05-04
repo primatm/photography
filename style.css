@@ -15,6 +15,7 @@ body {
 #landing {
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -28,11 +29,14 @@ body {
   font-size: 20vw;
   font-weight: 400;
   letter-spacing: -3px;
-  line-height: 0.3;
   text-align: center;
 }
-#landing span {
-  font-size: 6vw;
+#landing p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.1;
+  font-size: 5.5vw;
   font-family: "Noto Serif Display", serif;
   letter-spacing: 0;
 }
@@ -68,15 +72,15 @@ body {
 }
 
 #about {
-  height: 100vh;
-  width: auto;
+  height: auto;
+  width: 100vw;
   padding: 16% 10%;
   text-align: center;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 #about span {
   position: absolute;
@@ -99,15 +103,16 @@ body {
 #section {
   min-height: 100vh;
   background: #201f1e;
+  /* background-image: url(/mulyadi-Kyc5r0HCvOQ-unsplash.jpg); */
   color: #f5f5f5;
   margin: 0 auto;
-  padding: 5rem 0;
+  padding: 5rem 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .title {
-  font-size: 3.5rem;
+  font-size: 2.7rem;
   font-family: "Noto Serif Display", serif;
 }
 .accordion {
@@ -125,7 +130,7 @@ body {
   align-items: center;
 }
 .question h3 {
-  font-size: 1.9rem;
+  font-size: 1.5rem;
   font-weight: 300;
 }
 .question img {
@@ -164,39 +169,104 @@ body {
   }
 }
 
-.nft {
+.contact {
+  position: relative;
   height: 100vh;
-  padding: 7rem 8rem;
-}
-.nft h2 {
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  font-size: 3rem;
-}
-
-#contact {
+  padding: 5rem 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  row-gap: 1rem;
-  padding: 3rem 2rem;
+  font-family: 'Lato', sans-serif;
 }
-#contact h3 {
-  font-size: 2rem;
-  font-family: "Noto Serif Display", serif;
+.contact h1 {
+  margin: 0 auto;
+  font-weight: 400;
+  color: rgb(85, 85, 85);
 }
-#contact a {
-  text-decoration: none;
-  color: #3d3d3d;
-  font-size: 1.4rem;
+form{
+  margin: 3rem auto;
+  width: 90%;
 }
-#social {
-  width: 50%;
+form ul {
+  list-style-type: none;
+}
+form li + li {
+  margin-top: 1em;
+}
+input, textarea {
+  font: 1rem 'Lato', sans-serif;
+  width: 100%;
+  height: 2.3rem;
+  box-sizing: border-box;
+  background: #f5f5f5;
+  border: 0;
+  border-bottom: 1px solid rgb(201, 201, 201);
+}
+textarea {
+  height: 10rem;
+  resize: none;
+  overflow: auto;
+}
+input:focus, textarea:focus {
+  outline: none;
+  border-color: rgb(54, 54, 54);
+}
+form button {
+  width: 100%;
+  padding: 9px;
+  background: transparent;
+  border: 1px solid rgb(85, 85, 85);
+  border-radius: 10px;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+form button:hover {
+  background: rgb(85, 85, 85);
+  color: #f5f5f5;
+  border: 1px solid #f5f5f5;
+}
+.social {
   display: flex;
+  margin: 2rem auto;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+.social h2 {
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+.social ul {
+  display: flex;
+  width: 80%;
+  margin-top: 2rem;
+  list-style-type: none;
   justify-content: space-evenly;
 }
-#social a {
-  font-size: 2rem;
+.social ul li {
+  width: 2.4rem;
+  transition: all 300ms ease;
+}
+.social ul li img {
+  filter: invert(0.3);
+}
+.social ul li:hover {
+  scale: 1.25;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  padding: 5px;
+  height: 2rem;
+  width: 100%;
+  background:rgb(54, 54, 54);
+  text-align: center;
+}
+footer p {
+  color: #f5f5f5;
+  /* width: 50%;
+  margin: 0 auto; */
 }
 
 /* tableti */

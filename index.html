@@ -23,7 +23,8 @@
         <div id="landing">
             <div id="menu"><span>menu</span></div>
 
-            <h1>John Doe<br><span>photography</span></h1>
+            <h1>John Doe</h1><br>
+            <p><span>photography</span> <span>&</span> <span>copywriting</span></p>
         </div>
 
         <div id="gallery">
@@ -99,27 +100,37 @@
             </div>
         </div>
 
-
-        <div class="nft">
-            <h2>I sell my work on..</h2>
-            <div class="platforms">
-
-            </div>
-        </div>
-
-        <footer>
-            <div class="contact">
-                <h3>contact me</h3>
-                <img src=""><span>email@gmail.com</span>
-                <img src=""><span>+1 234 5678</span>
-            </div>
+        <div class="contact">
+            <h1>Send Me A Message..</h1>
+            <form action="" method="post">
+                <ul>
+                    <li>
+                        <input type="text" id="name" name="user_name" placeholder="Name">
+                    </li>
+                    <li>
+                        <input type="email" id="mail" name="user_email" value="Email" placeholder="Email">
+                    </li>
+                    <li>
+                        <textarea class="scroll" name="user_message" id="msg" cols="30" rows="10" placeholder="Your Message.."></textarea>
+                    </li>
+                    <li class="button">
+                        <button type="submit">Send</button>
+                    </li>
+                </ul>
+            </form>
             <div class="social">
-                <h3>my social media</h3>
-                <img src="" alt="">
+                <h2>Social Media</h2>
+                <ul>
+                    <li><a href=""><img src="/social/facebook-brands.svg"></a></li>
+                    <li><a href=""><img src="/social/instagram-brands.svg"></a></li>
+                    <li><a href=""><img src="/social/twitter-brands.svg"></a></li>
+                    <li><a href=""><img src="/social/behance-brands.svg"></a></li>
+                </ul>
             </div>
-        </footer>
-
-
+            <footer>
+                <p>All Rights Reserved</p>
+            </footer>
+        </div>
     </main>
 
     <script src="app.js"></script>
