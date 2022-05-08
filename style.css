@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Noto+Serif&family=Noto+Serif+Display:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Noto+Serif:wght@300;400&family=Noto+Serif+Display:wght@300;400&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -12,14 +13,6 @@ body {
   background: #f5f5f5;
 }
 
-#landing {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
 .btn {
   position: absolute;
   top: 25px;
@@ -28,33 +21,40 @@ body {
   width: 35px;
   height: 20px;
 }
+
 .btn span {
   width: 35px;
   height: 2px;
-  background:rgb(54, 54, 54);
+  background: rgb(54, 54, 54);
   display: flex;
   position: absolute;
   transition: .3s;
 }
+
 .btn span:nth-child(1) {
   top: 20%;
 }
+
 .btn span:nth-child(2) {
   top: 70%;
 }
+
 .btn.is-active span {
   background: #f5f5f5;
 }
+
 .btn.is-active span:nth-child(1) {
   top: 50%;
   transform: rotate(-45deg);
 }
+
 .btn.is-active span:nth-child(2) {
   top: 50%;
   transform: rotate(45deg);
 }
+
 .menu {
-  background:rgb(54, 54, 54);
+  background: #01161E;
   display: flex;
   align-items: center;
   position: fixed;
@@ -67,19 +67,23 @@ body {
   transition: .3s;
   visibility: hidden;
 }
+
 .menu.is-active {
   opacity: 1;
   visibility: visible;
 }
+
 .menu_list {
   display: flex;
   flex-direction: column;
   list-style-type: none;
   font-family: 'Lato', sans-serif;
 }
+
 .menu_item:not(:last-child) {
   margin-bottom: 30px;
 }
+
 .menu_link {
   position: relative;
   display: inline-flex;
@@ -89,6 +93,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 }
+
 .menu_link:after {
   content: '';
   position: absolute;
@@ -98,8 +103,18 @@ body {
   display: inline-flex;
   background: rgb(222, 222, 222);
 }
+
 .menu_link:hover:after {
   width: 100%;
+}
+
+#landing {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 #landing h1 {
@@ -108,7 +123,9 @@ body {
   font-weight: 400;
   letter-spacing: -3px;
   text-align: center;
+  color: #01161E;
 }
+
 #landing p {
   display: flex;
   flex-direction: column;
@@ -125,10 +142,23 @@ body {
   flex-direction: column;
   text-align: center;
   font-family: "Noto Serif Display", serif;
-  font-size: 1.2rem;
+  font-size: 2rem;
   letter-spacing: 1px;
-  text-shadow: 0 0 3px #383838;
+  text-shadow: 0 0 10px #383838;
   color: white;
+}
+.img-cont {
+  transition: all .5s ease;
+}
+.img-cont a {
+  transition: all .5s ease;
+}
+.img-cont:hover {
+  box-shadow: inset 0 0 0 15px #f5f5f5;
+}
+.img-cont:hover a {
+  transform: scale(1.15);
+  overflow: hidden;
 }
 .img-cont a {
   display: flex;
@@ -139,20 +169,21 @@ body {
   text-decoration: none;
   color: white;
 }
+
 .img-container1 {
   background: center / cover no-repeat url(portrait.jpg);
   height: 50%;
 }
+
 .img-container2 {
-  background: center / cover no-repeat
-    url(motion.jpg);
+  background: center / cover no-repeat url(motion.jpg);
   height: 50%;
 }
 
 #about {
   height: auto;
   width: 100vw;
-  padding: 16% 10%;
+  padding: 12% 10%;
   text-align: center;
   position: relative;
   display: flex;
@@ -160,6 +191,7 @@ body {
   justify-content: center;
   overflow-x: hidden;
 }
+
 #about span {
   position: absolute;
   top: 50%;
@@ -171,17 +203,54 @@ body {
   font-family: "Noto Serif Display", serif;
   color: #ebebeb;
 }
+
 #about p {
   font-family: "Lato", sans-serif;
   font-size: 1.25rem;
   font-weight: 300;
   line-height: 1.5;
+  color: #01161E;
+}
+
+.work {
+  min-height: 100vh;
+  background: #01161E;
+  color: #f5f5f5;
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.work p {
+  font-weight: 300;
+  line-height: 1.6;
+}
+.work h3 {
+  font-size: 1.7rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  margin: 3rem 0 2rem;
+}
+.clients {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.client { 
+  display: flex;
+  align-items: center;
+}
+.client img {
+  height: 3.7rem;
+  padding-right: 1em;
 }
 
 #section {
   min-height: 100vh;
-  background: #201f1e;
-  /* background-image: url(/mulyadi-Kyc5r0HCvOQ-unsplash.jpg); */
+  background: #01161E;
   color: #f5f5f5;
   margin: 0 auto;
   padding: 5rem 1rem;
@@ -189,10 +258,14 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
 .title {
-  font-size: 2.7rem;
-  font-family: "Noto Serif Display", serif;
+  font-size: 1.9rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  margin-bottom: 2rem;
 }
+
 .accordion {
   max-width: 900px;
   margin-top: 4rem;
@@ -202,45 +275,55 @@ body {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
 }
+
 .question {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .question h3 {
   font-size: 1.5rem;
   font-weight: 300;
 }
+
 .question img {
   width: 3rem;
   height: 2rem;
   filter: invert(1);
 }
+
 .answer {
   max-height: 0;
   overflow: hidden;
   transition: max-height 1.4s ease;
 }
+
 .answer p {
   padding-top: 1rem;
   line-height: 1.5;
   font-size: 1.4rem;
 }
+
 .accordion.active .answer {
   max-height: 300px;
   animation: fade 1s ease-in-out;
 }
+
 .accordion.active img {
   transform: rotate(90deg);
 }
+
 .accordion img {
   transition: transform 0.4s ease-in;
 }
+
 @keyframes fade {
   from {
     opacity: 0;
     transform: translateY(-10px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -254,23 +337,31 @@ body {
   display: flex;
   flex-direction: column;
   font-family: 'Lato', sans-serif;
+  color: #01161E;
 }
+
 .contact h1 {
   margin: 0 auto;
+  font-size: 1.8rem;
   font-weight: 400;
-  color: rgb(85, 85, 85);
+  color: #3a3f42;
 }
-form{
+
+form {
   margin: 3rem auto;
   width: 90%;
 }
+
 form ul {
   list-style-type: none;
 }
-form li + li {
+
+form li+li {
   margin-top: 1em;
 }
-input, textarea {
+
+input,
+textarea {
   font: 1rem 'Lato', sans-serif;
   width: 100%;
   height: 2.3rem;
@@ -278,16 +369,21 @@ input, textarea {
   background: #f5f5f5;
   border: 0;
   border-bottom: 1px solid rgb(201, 201, 201);
+  transition: all 500ms ease;
 }
+
 textarea {
   height: 10rem;
   resize: none;
   overflow: auto;
 }
-input:focus, textarea:focus {
+
+input:focus,
+textarea:focus {
   outline: none;
   border-color: rgb(54, 54, 54);
 }
+
 form button {
   width: 100%;
   padding: 9px;
@@ -297,24 +393,29 @@ form button {
   font-family: 'Lato', sans-serif;
   font-size: 1.2rem;
   cursor: pointer;
-  transition: all 300ms ease;
+  transition: all 400ms ease;
 }
+
 form button:hover {
-  background: rgb(85, 85, 85);
+  background: #01161E;
   color: #f5f5f5;
-  border: 1px solid #f5f5f5;
+  border: 1px solid #01161E;
 }
+
 .social {
   display: flex;
   margin: 2rem auto;
   flex-direction: column;
   align-items: center;
   width: 90%;
+  color: #3a3f42;
 }
+
 .social h2 {
   font-weight: 400;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
 }
+
 .social ul {
   display: flex;
   width: 80%;
@@ -322,25 +423,30 @@ form button:hover {
   list-style-type: none;
   justify-content: space-evenly;
 }
+
 .social ul li {
   width: 2.4rem;
   transition: all 300ms ease;
 }
+
 .social ul li img {
   filter: invert(0.3);
 }
+
 .social ul li:hover {
   scale: 1.25;
 }
+
 footer {
   position: absolute;
   bottom: 0;
   padding: 5px;
   height: 2rem;
   width: 100%;
-  background:rgb(54, 54, 54);
+  background: #01161E;
   text-align: center;
 }
+
 footer p {
   color: #f5f5f5;
   /* width: 50%;
@@ -352,6 +458,7 @@ footer p {
   #gallery {
     flex-direction: row;
   }
+
   .img-cont {
     width: 50%;
     height: auto;
@@ -364,44 +471,57 @@ footer p {
     font-size: 12rem;
     line-height: 0.25;
   }
+
   #landing span {
     font-size: 2.5rem;
   }
+
   #gallery h2 {
     font-size: 4vw;
   }
+
   #gallery h3 {
     font-size: 2vw;
   }
+
   #about {
     padding: 16% 20%;
   }
+
   #about p {
     font-size: 1.6rem;
     line-height: 1.8;
   }
+
   #about span {
     letter-spacing: -15px;
   }
+
   .exhibitions {
     font-size: 1.5rem;
   }
+
   #virtual h3 {
     font-size: 5vw;
   }
+
   #nft h3 {
     font-size: 4vw;
   }
+
   #nft h4 {
     font-size: 2.6vw;
   }
+
   #contact h3 {
     font-size: 4vw;
   }
+
   #social {
     width: 30%;
     justify-content: space-evenly;
   }
+
   #social a {
     font-size: 5vw;
   }
