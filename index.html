@@ -20,7 +20,7 @@
 <body>
 
     <main>
-        <div id="landing">
+        <div id="landing" class="scroll">
             <a href="javascript:;" class="btn">
                 <span></span>
                 <span></span>
@@ -45,11 +45,11 @@
                 </ul>
             </div>
 
-            <h1>John Doe</h1><br>
+            <h1>J<span>o</span>hn D<span>o</span>e</h1><br>
             <p><span>photography</span> <span>&</span> <span>copywriting</span></p>
         </div>
 
-        <div id="gallery">
+        <div id="gallery" class="scroll">
             <div class="img-cont img-container1">
                 <a href="#">
                     <h2>Portraits</h2>
@@ -62,7 +62,7 @@
             </div>
         </div>
 
-        <div id="about">
+        <div id="about" class="scroll">
             <span>About</span>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste rerum, nostrum eos consequatur, nemo qui
                 amet suscipit animi voluptates molestiae natus ipsam dolor. Eum omnis, itaque quos esse voluptatibus,
@@ -79,44 +79,59 @@
             </p>
         </div>
 
-        <div class="work">
+        <div class="work scroll">
             <h2>I will transform your ideas into remarkable digital products</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia natus saepe, incidunt sapiente voluptatibus laborum quod ullam esse dolor? Ab minus fuga labore illo! Atque iure maxime officiis amet vitae minus earum vero, eius fugit quidem optio ex consequuntur aut est dolores laudantium similique enim quae aperiam, porro aliquid harum.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia natus saepe, incidunt sapiente voluptatibus laborum quod ullam esse dolor? Ab minus fuga labore illo! Atque iure maxime officiis amet vitae minus earum vero, eius fugit quidem optio ex consequuntur aut est dolores laudantium similique enim quae aperiam, porro aliquid harum.
+                Nihil error hic nesciunt
+                nemo nobis repudiandae fugit placeat minima quo modi voluptas et assumenda consectetur ab doloribus
+                officia voluptatum id, quasi adipisci deserunt unde culpa architecto.
+            </p>
             <a href="#">My Resume</a>
+
+            <h3>Some of my clients:</h3>
+            <div class="clients">
+                <img src="/clients2/artfibers.png">
+                <img src="/clients2/bench.png">
+                <img src="/clients2/farmerhouse.png">
+                <img src="/clients2/oneartnation.png">
+                <img src="/clients2/skytire.png">
+                <img src="/clients2/snugglebugz.png">
+            </div>
         </div>
 
-        <div class="contact">
-            <h1>Send Me A Message..</h1>
-            <form action="" method="post">
-                <ul>
-                    <li>
-                        <input type="text" id="name" name="user_name" placeholder="Name">
-                    </li>
-                    <li>
-                        <input type="email" id="mail" name="user_email" placeholder="Email">
-                    </li>
-                    <li>
-                        <textarea class="scroll" name="user_message" id="msg" cols="30" rows="10"
-                            placeholder="Your Message.."></textarea>
-                    </li>
-                    <li class="button">
-                        <button type="submit">Send</button>
-                    </li>
-                </ul>
-            </form>
-            <div class="social">
-                <h2>Social Media</h2>
-                <ul>
-                    <li><a href=""><img src="/social/facebook-brands.svg"></a></li>
-                    <li><a href=""><img src="/social/instagram-brands.svg"></a></li>
-                    <li><a href=""><img src="/social/twitter-brands.svg"></a></li>
-                    <li><a href=""><img src="/social/behance-brands.svg"></a></li>
-                </ul>
-            </div>
-            <footer>
-                <p>All Rights Reserved</p>
-            </footer>
+        <div class="contact scroll">
+                <h1>Send Me A Message..</h1>
+                <form action="" method="post">
+                    <ul>
+                        <li>
+                            <input type="text" id="name" name="user_name" placeholder="Name">
+                        </li>
+                        <li>
+                            <input type="email" id="mail" name="user_email" placeholder="Email">
+                        </li>
+                        <li>
+                            <textarea class="scroll" name="user_message" id="msg" cols="30" rows="10"
+                                placeholder="Your Message.."></textarea>
+                        </li>
+                        <li class="button">
+                            <button type="submit">Send</button>
+                        </li>
+                    </ul>
+                </form>
+                <div class="social">
+                    <h2>Social Media</h2>
+                    <ul>
+                        <li><a href=""><img src="/social/facebook-brands.svg"></a></li>
+                        <li><a href=""><img src="/social/instagram-brands.svg"></a></li>
+                        <li><a href=""><img src="/social/twitter-brands.svg"></a></li>
+                        <li><a href=""><img src="/social/behance-brands.svg"></a></li>
+                    </ul>
+                </div>
         </div>
+        
+        <footer>
+            <p>All Rights Reserved</p>
+        </footer>
     </main>
 
     <script src="app.js"></script>
